@@ -36,15 +36,18 @@ function createMenu(items) {
 }
 
 // Close on escape pressed
-$(document).on('keydown', function(e) {
-    switch(e.key) {
-        case "Escape":
-            QBRadialMenu.close();
-            break;
-    }
+$(document).on("keydown", function (e) {
+	switch (e.key) {
+		case "Escape":
+			QBRadialMenu.close();
+			break;
+		case "F1":
+			QBRadialMenu.close();
+			break;
+	}
 });
 
 // Close on any key up, hold/release support incase user changes keybind on the fivem side
-$(document).on('keyup', function(e) {
-    QBRadialMenu.close();
-});
+// $(document).on('keyup', function(e) {
+//     QBRadialMenu.close();
+// });
